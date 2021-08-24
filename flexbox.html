@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Topic</title>
+    <style>
+        .item {
+            background: rgb(228,200,200);
+            padding: 20px;
+            margin: 2px;
+            border: 1px solid #000;
+            flex: 1;
+            /* flex n. n=1, the higher the longer*/
+        }
+        .item-1 {
+            flex: 2;
+        }
+        .item-2 {
+            flex: 3;
+        }
+        #container {
+            display: flex;
+            /* change item directions */
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* flex-flow: row wrap; use this as shortcut of flex-direction and flex-wrap */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+            <div class="item item-1">
+                <h2>Item 1</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, consequatur.</p>
+            </div>
+            <div class="item item-2">
+                <h2>Item 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, deserunt!</p>
+            </div>
+            <div class="item">
+                <h2>Item 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, tempora!</p>
+            </div>
+    </section>
+    <section id="container">
+        <div class="item">
+            <h2>Item 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, tempora!</p>
+        </div>
+        <div class="item">
+            <h2>Item 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, tempora!</p>
+        </div>
+    </section>
+    
+</body>
+</html>
